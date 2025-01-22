@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block extra_styles %}
+
+  <link rel="stylesheet" href="/static/css/about.css" />
+  <link rel="stylesheet" href="/static/css/OtherSearch.css" />
+  <link rel="stylesheet" href="/static/css/footer.css" />
+
+{% endblock %}
+
+{% block content %}
+
+   <!-- Team statement -->
+   <div class="about_container">
+    <div class="about_backplate">
+      <h1 class="about_title">About Us</h1>
+      <p>
+        Welcome to our website! Our goal is to bring you exciting content
+        related to random movies and much more. We are a small, dedicated team
+        passionate about creating engaging experiences for our users.
+      </p>
+      <p>
+        Our mission is to make movie discovery fun and interactive. Whether
+        you're here to explore random movies or learn more about us, we strive
+        to give you the best experience possible!
+      </p>
+    </div>
+  </div>
+
+  <!-- Team descriptions and pictures Section -->
+  <div class="team_container">
+    <h2 class="team_title">Meet Our Team</h2>
+    <div class="team_members">
+
+      <div class="team_card">
+        <a href="https://github.com" target="_blank">
+
+        <div class="avatar">
+          <img src="static/img/aj.png" alt="aj" class="circle-avatar" />
+        </div>
+        <div class="team_info">
+          <h3>AJ Leary</h3>
+          <p>Content</p>
+          <p class="team_bio">
+            Furman University class of 26'<br />
+            <br />
+            I enjoy both the action and comedy genres the most. My favorite
+            movie is Lord of the Rings: Return of the King.
+          </p>
+        </div>
+      </div>
+      </a>
+
+      <div class="team_card">
+        <a href="https://github.com/moultriedanger" target="_blank">
+
+        <div class="avatar">
+
+          <img
+            src="static/img/moultrie.png"
+            alt="moultrie"
+            class="circle-avatar"
+          />
+        </div>
+        <div class="team_info">
+          <h3>Moultrie Dangerfield</h3>
+          <p>Programmer</p>
+          <p class="team_bio">
+            Furman University class of 25'<br />
+            <br />My favorite movie is Shutter Island and my favorite actor is
+            Jonah Hill. If you enjoy using MovieGenie, consider donating!
+          </p>
+        </div>
+      </div>
+    </a>   
+
+
+      <div class="team_card">
+        <a href="https://github.com/MatthewJKeller" target="_blank">
+
+        <div class="avatar">
+            <img src="static/img/matt.png" alt="matt" class="circle-avatar" />
+               </div>
+        <div class="team_info">
+          <h3>Matt Keller</h3>
+          <p>Programmer</p>
+          <p class="team_bio">
+            Furman University class of 25'<br />
+            <br />My favorite actor is Ryan Gosling and Bladerunner 2049 is my
+            favorite movie. Thanks for using MovieGenie!
+          </p>
+        </div>
+      </div>
+    </a> 
+
+      <div class="team_card">
+        <a href="https://github.com/ismakh9" target="_blank">
+
+        <div class="avatar">
+
+          <img
+            src="static/img/khalid.png"
+            alt="Khalid"
+            class="circle-avatar"
+          />
+        </div>
+        
+        <div class="team_info">
+          <h3>Khalid Ismail</h3>
+          <p>Designer</p>
+          <p class="team_bio">
+            Furman University class of 25'<br />
+            <br />I'm passionate about the web, so I want to become a
+            full-stack developer. My favorite movie is In the Mood for Love.
+          </p>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Contact Form Section -->
+  <div id="contactID"></div>
+  <div class="contact_container">
+    <h2 class="contact_title">Contact Us</h2>
+    <form
+      id="contactForm"
+      action="http://127.0.0.1:5000/contact"
+      method="POST"
+      class="contact_form"
+    >
+      <div class="form_group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form_group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <input
+          type="text"
+          name="importantdata"
+          id="importantdata"
+          style="display: none"
+        />
+      </div>
+      <div class="form_group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit_btn">Submit</button>
+    </form>
+  </div>
+  <!-- Footer Section -->
+
+
+  <!-- JS Functions -->
+
+
+{% endblock %}
+
+
+{% block extra_scripts %}
+<script src="/static/js/contact.js"></script>
+{% endblock %}

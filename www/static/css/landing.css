@@ -1,0 +1,128 @@
+/*Body settings and animation for page load */
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    scroll-behavior: smooth;
+    font-family: "Arsenal SC", sans-serif;
+
+   }
+  
+   body{
+    animation:transitionIn 1.50s;
+
+}
+
+@keyframes transitionIn{
+  from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+  body:not(.hero){
+    background-color: black;
+    color: #fff;
+  }
+
+
+
+
+
+
+  /* Background video on landing page */
+  #background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+
+  /* Logo, slogan, find movie button */
+  .h1{
+    font-family: "Bodoni Moda SC", serif;
+
+  }
+  .content {
+    font-family: "Bodoni Moda SC", serif;
+
+    text-align: center;
+  }
+
+  .content .logo{
+    width:350px;
+    height:350px;
+  }    
+  .content h1 {
+    font-family: "Bodoni Moda SC", serif;
+
+    font-size: 80px;
+    color: #ffffff;
+    font-weight:bold;
+    margin-top: -30px;
+  }
+    
+  .content .slogan {
+    font-family: "Bodoni Moda SC", serif;
+
+    font-size: 23px;
+    color: #fff;
+    margin-top: -75px;
+  }
+  
+  .content a {
+    font-family: "Bodoni Moda SC", serif;
+
+      text-decoration: none;
+      display: inline-block;
+      color: #fff;
+      margin-top: 45px;
+      font-size: 15px;
+      border: 2px solid #fff;
+      padding: 15px 35px;
+      border-radius: 25px;
+      margin-top: 10px;
+      transition: color 0.5s ease, border-color 0.5s ease;
+  }
+  
+  .content a:hover {
+      color: gray;
+      border-color: gray;
+  }
+  
+  
+  
+  /* Correct dimensions for mobile */
+  @media (max-width: 1024px) {
+    .content .logo {
+        width: 300px; 
+        height: 300px; 
+    }
+
+    .content h1 {
+      margin-top: 6px; 
+
+        font-size: 40px; 
+    }
+    .content .slogan{
+      font-size: 18px;
+      margin-top: 2px; 
+    }
+    
+}
