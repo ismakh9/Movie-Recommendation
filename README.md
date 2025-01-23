@@ -3,7 +3,7 @@
 MovieGenie is a smart movie recommendation platform that uses artificial intelligence to suggest movies based on users' search queries. Whether you’re looking for movies about the Japanese Edo period or a thrilling sci-fi adventure, MovieGenie is your guide to discovering the perfect film for your interests!
 ---
 
-👉 [**View Demo**](t-sigma-seven.vercel.app/landing)
+👉 [**View Demo**](https://t-sigma-seven.vercel.app/landing)
 
 ---
 
